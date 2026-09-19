@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nammaweb AI Suite | Growth Marketing AI & Ads (BBA/MBA - NEP 2020)</title>
+    <meta name="description" content="Elite Growth Marketing AI & Ads executive training under NEP 2020 guidelines designed for high-level BBA/MBA professionals and modern enterprise growth.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            gold: '#C5A059',
+                            dark: '#0B0F19',
+                            card: '#131D31',
+                            border: '#2A3B5E',
+                            teal: '#0E7490'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        body { font-family: 'Plus Jakarta Sans', sans-serif; }
+    </style>
+</head>
+<body class="bg-luxury-dark text-slate-100 antialiased selection:bg-luxury-gold selection:text-black">
+
+    <!-- TOP NAVIGATION BAR -->
+    <header class="sticky top-0 z-50 backdrop-blur-md bg-luxury-dark/90 border-b border-luxury-border">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            
+            <!-- Logo & Brand -->
+            <a href="#home" class="flex items-center gap-3 group">
+                <img src="logo.png" alt="Nammaweb Logo" class="h-10 w-10 object-contain rounded-lg border border-luxury-gold/30 p-1 group-hover:border-luxury-gold transition-all">
+                <div class="flex flex-col">
+                    <span class="text-xl font-bold tracking-wider text-white">Nammaweb <span class="text-luxury-gold">AI Suite</span></span>
+                    <span class="text-[10px] uppercase tracking-widest text-slate-400">NEP 2020 Growth Tech</span>
+                </div>
+            </a>
+
+            <!-- Desktop Nav Links -->
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <button onclick="switchTab('home')" class="nav-btn-home hover:text-luxury-gold transition text-luxury-gold">Overview</button>
+                <button onclick="switchTab('curriculum')" class="nav-btn-curriculum hover:text-luxury-gold transition">AI & Ads (BBA/MBA)</button>
+                <button onclick="switchTab('gallery')" class="nav-btn-gallery hover:text-luxury-gold transition">Showcase</button>
+                <button onclick="switchTab('pricing')" class="nav-btn-pricing hover:text-luxury-gold transition">Enroll & Pricing</button>
+                <button onclick="switchTab('blog')" class="nav-btn-blog hover:text-luxury-gold transition">SEO Insights</button>
+            </nav>
+
+            <!-- CTA / Contact Trigger -->
+            <div class="hidden md:flex items-center gap-4">
+                <a href="https://wa.me/917204248002" target="_blank" class="bg-gradient-to-r from-luxury-gold to-yellow-600 text-black px-5 py-2.5 rounded-full font-semibold text-sm shadow-lg hover:shadow-luxury-gold/20 hover:scale-105 transition-all flex items-center gap-2">
+                    <i class="fa-brands fa-whatsapp text-lg"></i> Direct Advisor
+                </a>
+            </div>
+
+            <!-- Mobile Menu Toggle -->
+            <button id="mobile-menu-btn" class="md:hidden text-slate-300 focus:outline-none">
+                <i class="fa-solid fa-bars text-2xl"></i>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Dropdown -->
+        <div id="mobile-menu" class="hidden md:hidden bg-luxury-card border-b border-luxury-border px-4 pt-2 pb-6 space-y-3">
+            <button onclick="switchTab('home'); toggleMobileMenu();" class="block w-full text-left py-2 text-slate-200 hover:text-luxury-gold">Overview</button>
+            <button onclick="switchTab('curriculum'); toggleMobileMenu();" class="block w-full text-left py-2 text-slate-200 hover:text-luxury-gold">AI & Ads (BBA/MBA)</button>
+            <button onclick="switchTab('gallery'); toggleMobileMenu();" class="block w-full text-left py-2 text-slate-200 hover:text-luxury-gold">Showcase Gallery</button>
+            <button onclick="switchTab('pricing'); toggleMobileMenu();" class="block w-full text-left py-2 text-slate-200 hover:text-luxury-gold">Pricing & Batches</button>
+            <button onclick="switchTab('blog'); toggleMobileMenu();" class="block w-full text-left py-2 text-slate-200 hover:text-luxury-gold">SEO Insights</button>
+            <a href="https://wa.me/917204248002" target="_blank" class="flex items-center justify-center gap-2 w-full bg-luxury-gold text-black py-2.5 rounded-xl font-semibold mt-4">
+                <i class="fa-brands fa-whatsapp"></i> Chat on WhatsApp
+            </a>
+        </div>
+    </header>
+
+    <!-- MAIN PAGE CONTAINER (2-Page Multi-View Setup via Tab Switcher) -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10 min-h-screen">
+
+        <!-- ================= PAGE 1: HOME & CORE SUITE ================= -->
+        <div id="page-home" class="page-view space-y-16">
+            
+            <!-- Hero Section -->
+            <section class="relative rounded-3xl p-8 sm:p-14 bg-gradient-to-br from-luxury-card via-[#0e1726] to-black border border-luxury-border overflow-hidden shadow-2xl">
+                <div class="absolute -right-20 -top-20 w-96 h-96 bg-luxury-gold/10 rounded-full blur-3xl pointer-events-none"></div>
+                
+                <div class="max-w-3xl space-y-6 relative z-10">
+                    <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-luxury-gold/10 border border-luxury-gold/30 text-luxury-gold text-xs font-semibold tracking-wide uppercase">
+                        <i class="fa-solid fa-graduation-cap"></i> NEP 2020 Compliant Executive Framework
+                    </div>
+                    <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-white leading-tight">
+                        Growth Marketing <span class="text-transparent bg-clip-text bg-gradient-to-r from-luxury-gold via-yellow-200 to-amber-500">AI & Ads Suite</span>
+                    </h1>
+                    <p class="text-slate-300 text-lg sm:text-xl font-light leading-relaxed">
+                        Transform corporate leadership and brand monetization through state-of-the-art machine learning algorithms, programmatic advertising pipelines, and data-driven experiential strategies curated specifically for modern BBA and MBA scholars.
+                    </p>
+
+                    <!-- Core 6-Line Summary Descriptor -->
+                    <div class="bg-luxury-dark/70 border-l-4 border-luxury-gold p-5 rounded-r-xl space-y-2 text-slate-300 text-sm sm:text-base leading-relaxed">
+                        <p>1. Integrates multi-channel algorithmic media buying with autonomous campaign optimization workflows.</p>
+                        <p>2. Implements experiential brand building aligned directly with modern National Education Policy (NEP 2020) multi-disciplinary goals.</p>
+                        <p>3. Equips BBA and MBA candidates with real-time predictive analytics to lower Customer Acquisition Cost (CAC) drastically.</p>
+                        <p>4. Emphasizes enterprise-grade programmatic advertising, conversion rate optimization (CRO), and advanced generative creative pipelines.</p>
+                        <p>5. Features hands-on live business simulation sandboxes mimicking elite luxury hospitality and high-scale tech markets.</p>
+                        <p>6. Delivers industry-recognized micro-certifications designed for immediate global corporate absorption and entrepreneurial venture launch.</p>
+                    </div>
+
+                    <div class="flex flex-wrap gap-4 pt-4">
+                        <button onclick="switchTab('pricing')" class="bg-luxury-gold text-black font-bold px-8 py-4 rounded-xl shadow-lg hover:bg-yellow-500 transition flex items-center gap-3">
+                            <i class="fa-solid fa-rocket"></i> Secure Your Slot
+                        </button>
+                        <button onclick="switchTab('curriculum')" class="bg-luxury-border/50 hover:bg-luxury-border text-white font-semibold px-8 py-4 rounded-xl border border-luxury-border transition">
+                            Explore Curriculum
+                        </button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Feature Overview Grid -->
+            <section class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-luxury-card border border-luxury-border p-8 rounded-2xl hover:border-luxury-gold/50 transition group">
+                    <div class="w-14 h-14 rounded-xl bg-luxury-gold/10 text-luxury-gold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-brain"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">AI-Powered Forecasting</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Leverage predictive neural nets to map target consumer journeys, scale ad spend safely, and target high-yield enterprise demographics.</p>
+                </div>
+                <div class="bg-luxury-card border border-luxury-border p-8 rounded-2xl hover:border-luxury-gold/50 transition group">
+                    <div class="w-14 h-14 rounded-xl bg-luxury-gold/10 text-luxury-gold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">Autonomous Ad Engines</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Master automated bidding matrices, self-optimizing creative variants across social networks, and precision audience segmentation.</p>
+                </div>
+                <div class="bg-luxury-card border border-luxury-border p-8 rounded-2xl hover:border-luxury-gold/50 transition group">
+                    <div class="w-14 h-14 rounded-xl bg-luxury-gold/10 text-luxury-gold flex items-center justify-center text-2xl mb-6 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-white mb-3">NEP 2020 BBA/MBA Focus</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">Fosters critical thinking, experiential project design, and cross-functional corporate growth metrics matching modern academic standards.</p>
+                </div>
+            </section>
+
+        </div>
+
+        <!-- ================= PAGE 2: CURRICULUM, GALLERY, BOOKING & BLOG ================= -->
+        <div id="page-secondary" class="page-view hidden space-y-20">
+            
+            <!-- Curriculum Section (BBA/MBA NEP 2020) -->
+            <section id="curriculum" class="space-y-8">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <h2 class="text-3xl font-bold text-white">Growth Marketing AI & Ads Curriculum</h2>
+                    <p class="text-slate-400 text-sm">Engineered under national guidelines to bridge business leadership theory with cutting-edge artificial intelligence execution.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="bg-luxury-card p-6 rounded-2xl border border-luxury-border">
+                        <span class="text-luxury-gold font-mono text-xs uppercase tracking-wider">Module 01</span>
+                        <h4 class="text-lg font-bold text-white mt-1 mb-2">Foundations of GenAI in Marketing</h4>
+                        <p class="text-slate-400 text-sm">Understanding prompt engineering, language model fine-tuning, and semantic brand positioning for high-end consumer sectors.</p>
+                    </div>
+                    <div class="bg-luxury-card p-6 rounded-2xl border border-luxury-border">
+                        <span class="text-luxury-gold font-mono text-xs uppercase tracking-wider">Module 02</span>
+                        <h4 class="text-lg font-bold text-white mt-1 mb-2">Programmatic Advertising & Bidding Science</h4>
+                        <p class="text-slate-400 text-sm">Automated real-time bidding architectures, multi-touch attribution analysis, and high-conversion retargeting flows.</p>
+                    </div>
+                    <div class="bg-luxury-card p-6 rounded-2xl border border-luxury-border">
+                        <span class="text-luxury-gold font-mono text-xs uppercase tracking-wider">Module 03</span>
+                        <h4 class="text-lg font-bold text-white mt-1 mb-2">NEP 2020 Experiential Capstones</h4>
+                        <p class="text-slate-400 text-sm">Multi-disciplinary project models allowing BBA/MBA candidates to run live funded campaigns under expert mentorship.</p>
+                    </div>
+                    <div class="bg-luxury-card p-6 rounded-2xl border border-luxury-border">
+                        <span class="text-luxury-gold font-mono text-xs uppercase tracking-wider">Module 04</span>
+                        <h4 class="text-lg font-bold text-white mt-1 mb-2">Luxury Hospitality Branding & Scaling</h4>
+                        <p class="text-slate-400 text-sm">Specialized vertical marketing focusing on elite hospitality experiences, customer lifetime value (LTV), and prestige branding.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Image Gallery Section (3-4 Professional Photos) -->
+            <section id="gallery" class="space-y-8">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <h2 class="text-3xl font-bold text-white">Growth Marketing AI & Ads Showcase</h2>
+                    <p class="text-slate-400 text-sm">Visualizing enterprise intelligence dashboards, multi-touch attribution models, and high-level execution suites.</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                    <!-- Photo 1 -->
+                    <div class="group relative rounded-2xl overflow-hidden border border-luxury-border bg-luxury-card">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?auto=format&fit=crop&w=600&q=80" alt="Growth Marketing Analytics Dashboard" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                            <span class="text-xs font-semibold text-luxury-gold tracking-wide">AI Analytics & Data Pipelines</span>
+                        </div>
+                    </div>
+                    <!-- Photo 2 -->
+                    <div class="group relative rounded-2xl overflow-hidden border border-luxury-border bg-luxury-card">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?auto=format&fit=crop&w=600&q=80" alt="Programmatic Ads Performance" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                            <span class="text-xs font-semibold text-luxury-gold tracking-wide">Programmatic Ad Optimization</span>
+                        </div>
+                    </div>
+                    <!-- Photo 3 -->
+                    <div class="group relative rounded-2xl overflow-hidden border border-luxury-border bg-luxury-card">
+                        <img src="https://images.unsplash.com/photo-1531403009284-440f080d1e12?auto=format&fit=crop&w=600&q=80" alt="BBA MBA Strategy Workshop" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                            <span class="text-xs font-semibold text-luxury-gold tracking-wide">Executive BBA/MBA Labs</span>
+                        </div>
+                    </div>
+                    <!-- Photo 4 -->
+                    <div class="group relative rounded-2xl overflow-hidden border border-luxury-border bg-luxury-card">
+                        <img src="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=600&q=80" alt="Luxury Brand Strategy" class="w-full h-56 object-cover group-hover:scale-105 transition duration-500">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-4">
+                            <span class="text-xs font-semibold text-luxury-gold tracking-wide">Luxury Brand Scaling Matrix</span>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Booking Section with Indian Prices (30 Days, 60 Days, 125 Days) -->
+            <section id="pricing" class="space-y-8">
+                <div class="text-center max-w-2xl mx-auto space-y-3">
+                    <h2 class="text-3xl font-bold text-white">Flexible Cohort Booking Plans</h2>
+                    <p class="text-slate-400 text-sm">Choose your implementation tenure for the Growth Marketing AI & Ads program tailored for BBA/MBA excellence.</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <!-- 30 Days Plan -->
+                    <div class="bg-luxury-card rounded-3xl p-8 border border-luxury-border flex flex-col justify-between relative hover:border-luxury-gold transition">
+                        <div>
+                            <span class="text-xs font-semibold uppercase tracking-widest text-luxury-gold px-3 py-1 bg-luxury-gold/10 rounded-full">Accelerated Sprint</span>
+                            <h3 class="text-2xl font-bold text-white mt-4">30 Days Intensive</h3>
+                            <p class="text-slate-400 text-xs mt-1">Rapid crash-course in generative AI and foundational ad metrics.</p>
+                            <div class="my-6">
+                                <span class="text-4xl font-extrabold text-white">₹24,999</span>
+                                <span class="text-slate-400 text-xs"> + GST</span>
+                            </div>
+                            <ul class="space-y-3 text-sm text-slate-300">
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-luxury-gold"></i> Core AI Prompt Modules</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-luxury-gold"></i> Basic Meta & Google Ad Labs</li>
+                                <li class="flex items-center gap-2"><i class="fa-solid fa-check text-luxury-gold"></i> Micro-Certification</li>
+                            </ul>
+                        </div>
+                        <button onclick="bookPlan('30 Days Intensive - ₹24,999')" class="mt-8 w-full bg-luxury-border hover:bg-luxury-gold hover:text-black text-white font-bold py-3.5 rounded-xl transition">
+                            Book 30-Day Plan
+                        </button>
